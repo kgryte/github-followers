@@ -169,7 +169,7 @@ tape( 'function returns a function which returns rate limit info to a provided c
 	}
 });
 
-tape( 'function returns a function which supports providing only a `username` option', function test( t ) {
+tape( 'function returns a function which supports providing only a `username` option (no authentication)', function test( t ) {
 	var expected;
 	var factory;
 	var opts;
@@ -233,7 +233,7 @@ tape( 'function returns a function which supports providing only a `token` optio
 	}
 });
 
-tape( 'function returns a function which supports providing both `token` and `username` options to get another user\'s followers', function test( t ) {
+tape( 'function returns a function which supports providing both `token` and `username` options to get another user\'s followers (increased rate limits)', function test( t ) {
 	var expected;
 	var factory;
 	var opts;
