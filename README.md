@@ -91,7 +91,7 @@ var opts = {
 	'token': 'tkjorjk34ek3nj4!'
 };
 
-var get = followers.factory( opts, clbk );
+var get = followers.factory( opts, onFollowers );
 
 get();
 get();
