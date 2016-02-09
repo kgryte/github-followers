@@ -2,7 +2,7 @@ Followers
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Get a user's followers.
+> Get a user's [followers][github-followers].
 
 
 ## Installation
@@ -21,7 +21,7 @@ var followers = require( 'github-followers' );
 <a name="followers"></a>
 #### followers( opts, clbk )
 
-[Gets][github-get] a user's [followers][github-followers].
+Gets a user's [followers][github-followers].
 
 ``` javascript
 var opts = {
@@ -60,7 +60,7 @@ var opts = {
 followers( opts, onFollowers );
 ```
 
-To get the followers of a particular user, set the `username` option.
+To get the [followers][github-followers] of a particular user, set the `username` option.
 
 ``` javascript
 var opts = {
