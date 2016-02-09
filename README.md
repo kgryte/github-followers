@@ -38,7 +38,7 @@ function onFollowers( error, results, info ) {
 		console.error( 'Reset: %s', (new Date( info.reset*1000 )).toISOString() );
 	}
 	if ( error ) {
-		throw error;
+		throw new Error( error.message );
 	}
 	console.log( JSON.stringify( results ) );
 	// returns <follower_data>
