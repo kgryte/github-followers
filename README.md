@@ -67,7 +67,7 @@ var opts = {
 	'username': 'kgryte'
 };
 
-follows( opts, onFollowers );
+followers( opts, onFollowers );
 ```
 
 To specify a [user agent][github-user-agent], set the `useragent` option.
