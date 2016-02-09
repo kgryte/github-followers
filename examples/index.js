@@ -14,7 +14,7 @@ function onFollowers( error, results, info ) {
 		console.error( info );
 	}
 	if ( error ) {
-		throw error;
+		throw new Error( error.message );
 	}
 	console.log( results );
 }
