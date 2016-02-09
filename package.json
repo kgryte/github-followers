@@ -57,7 +57,9 @@
     "validate.io-string-primitive": "^1.0.0"
   },
   "devDependencies": {
+    "@kgryte/noop": "^1.0.0",
     "browserify": "12.x.x",
+    "chai": "3.x.x",
     "codecov": "1.x.x",
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
