@@ -60,6 +60,16 @@ var opts = {
 followers( opts, onFollowers );
 ```
 
+To get the followers of a particular user, set the `username` option.
+
+``` javascript
+var opts = {
+	'username': 'kgryte'
+};
+
+follows( opts, onFollowers );
+```
+
 To specify a [user agent][github-user-agent], set the `useragent` option.
 
 ``` javascript
@@ -94,7 +104,7 @@ The factory method accepts the same `options` as [`followers()`](#followers).
 
 ## Notes
 
-*	Either a `username` or a [`token`][github-token] or both __must__ be provided. If provided a [`token`][github-token], but not a `username`, the `function` [resolves][github-get] the authenticated user's Github [followers][github-followers].
+*	Either a `username` or a [`token`][github-token] or both __must__ be provided. If provided a [`token`][github-token], but not a `username`, the `function` [fetches][github-get] the authenticated user's Github [followers][github-followers].
 *	[Rate limit][github-rate-limit] information includes the following:
 	-	__limit__: maximum number of requests a consumer is permitted to make per hour.
 	-	__remaining__: number of remaining requests.
